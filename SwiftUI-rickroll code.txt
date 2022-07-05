@@ -1,1 +1,19 @@
+import SwiftUI
+import Subsonic
 
+// this code was created by cohen if you use this code please give credit to Cohen //
+
+struct ContentView: View {
+    @State private var rick = false
+    var body: some View {
+        Button("spawn the legend himself ?") {
+            rick.toggle()
+            play(sound: "Example.mp3")
+        }
+        if rick == true {
+            Image("Rick photo")
+                .imageScale(.small)
+            Text("you have been rickrolled!")
+        }
+    }
+}
