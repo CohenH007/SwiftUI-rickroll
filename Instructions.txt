@@ -1,0 +1,31 @@
+# SwiftUI-rickroll
+Swift app that uses Swift ui and subsonic ( not created by me it was created by: https://github.com/twostraws/Subsonic ) to rickroll you after you press a button
+to use:
+1.create a new app project in swift playgrounds and delete the text of "content view" and copy paste the code: 
+
+import SwiftUI
+import Subsonic
+
+// this code was created by cohen if you use this code please give credit to Cohen //
+
+struct ContentView: View {
+    @State private var rick = false
+    var body: some View {
+        Button("spawn the legend himself ?") {
+            rick.toggle()
+            play(sound: "Example.mp3")
+        }
+        if rick == true {
+            Image("Rick photo")
+                .imageScale(.small)
+            Text("you have been rickrolled!")
+        }
+    }
+}
+
+
+2. rename rickroll photo to "Rick photo" and the mp3 to Example and add to the project
+
+3. add the swift packge subsonic to the project by putting https://github.com/twostraws/Subsonic into the packege manager and hitting enter
+
+4. now run the code and tap on the text and see what happens!
