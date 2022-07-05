@@ -1,7 +1,7 @@
 import SwiftUI
 import Subsonic
 
-// this code was created by cohen if you use this code please give credit to Cohen //
+// this code was created by cohen if you use this code non personally please give credit to Cohen //
 
 struct ContentView: View {
     @State private var rick = false
